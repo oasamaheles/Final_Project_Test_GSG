@@ -18,6 +18,7 @@ public class HomePageTest{
         Setup.wait.until(ExpectedConditions.elementToBeClickable(closeCookiesButton));
         closeCookiesButton.click();
     }
+
     @Test(priority = 2)
     public void verifyThatHomeScreenIsOpenedSuccessfully() {
         WebElement homeScreenIsOpened = Setup.driver.findElement(By.xpath("//body/div[@id='ml-body-container']/main[1]"));
