@@ -1,0 +1,92 @@
+Index: src/test/java/AcademyPageTest.java
+===================================================================
+diff --git a/src/test/java/AcademyPageTest.java b/src/test/java/AcademyPageTest.java
+deleted file mode 100644
+--- a/src/test/java/AcademyPageTest.java	(revision 386e7cd50d34463c1204b4a11c9a2ed938b04e1e)
++++ /dev/null	(revision 386e7cd50d34463c1204b4a11c9a2ed938b04e1e)
+@@ -1,15 +0,0 @@
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebElement;
+-import org.testng.annotations.Test;
+-
+-public class AcademyPageTest{
+-
+-    @Test
+-    public void verifyThatClickingIkhlasButtonOpensTheArchive() {
+-        WebElement ikhlasElement = Setup.driver.findElement(By.xpath("//div[@data-id='4b8df64']"));
+-        //clickable?
+-//        wait.until(ExpectedConditions.elementToBeClickable(ikhlasElement));
+-        ikhlasElement.click();
+-    }
+-
+-}
+Index: src/test/java/HomePOM.java
+===================================================================
+diff --git a/src/test/java/HomePOM.java b/src/test/java/HomePOM.java
+deleted file mode 100644
+--- a/src/test/java/HomePOM.java	(revision 386e7cd50d34463c1204b4a11c9a2ed938b04e1e)
++++ /dev/null	(revision 386e7cd50d34463c1204b4a11c9a2ed938b04e1e)
+@@ -1,9 +0,0 @@
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebElement;
+-
+-public class HomePOM {
+-    public static WebElement getJoinAsSpecialistButton(){
+-        return Setup.driver.findElement(By.xpath("//button[@data-target='#']"));
+-    }
+-
+-}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"2e8def0b-e21c-4236-bafb-0c6b76956d1a\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/HomePOM.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/HomePOM.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/HomePageTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/HomePageTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Setup.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/Setup.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/TearDown.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/TearDown.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/testng.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/testng.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2LuQs6fFkvMTHe3we9s6FLZTsp2\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/ohill/IdeaProjects/Final_Project_Test_GSG/src/test/java&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\ohill\\IdeaProjects\\Final_Project_Test_GSG\\src\\test\\java\" />\r\n      <recent name=\"C:\\Users\\ohill\\IdeaProjects\\Final_Project_Test_GSG\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.C:/Users/ohill/IdeaProjects/Final_Project_Test_GSG/testng.xml\">\r\n    <configuration name=\"C:/Users/ohill/IdeaProjects/Final_Project_Test_GSG/testng.xml\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Final_Project_Test_GSG\" />\r\n      <option name=\"SUITE_NAME\" value=\"$PROJECT_DIR$/testng.xml\" />\r\n      <option name=\"TEST_OBJECT\" value=\"SUITE\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"HomePageTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Final_Project_Test_GSG\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"HomePageTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"HomePageTest.verifyThatHomeScreenIsOpenedSuccessfully\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Final_Project_Test_GSG\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"HomePageTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"verifyThatHomeScreenIsOpenedSuccessfully\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"HomePageTest.verifyThatSignInButtonIsDisplayed\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Final_Project_Test_GSG\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"HomePageTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"verifyThatSignInButtonIsDisplayed\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.C:/Users/ohill/IdeaProjects/Final_Project_Test_GSG/testng.xml\" />\r\n        <item itemvalue=\"TestNG.HomePageTest\" />\r\n        <item itemvalue=\"TestNG.HomePageTest.verifyThatHomeScreenIsOpenedSuccessfully\" />\r\n        <item itemvalue=\"TestNG.HomePageTest.verifyThatSignInButtonIsDisplayed\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"2e8def0b-e21c-4236-bafb-0c6b76956d1a\" name=\"Changes\" comment=\"\" />\r\n      <created>1676718694119</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1676718694119</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 386e7cd50d34463c1204b4a11c9a2ed938b04e1e)
++++ b/.idea/workspace.xml	(date 1676988483498)
+@@ -4,15 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2e8def0b-e21c-4236-bafb-0c6b76956d1a" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePOM.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePageTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Setup.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/TearDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TearDown.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
++    <list default="true" id="2e8def0b-e21c-4236-bafb-0c6b76956d1a" name="Changes" comment="Update final Project">
++      <change beforePath="$PROJECT_DIR$/src/test/java/AcademyPageTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/HomePOM.java" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -113,6 +107,14 @@
+       <option name="presentableId" value="Default" />
+       <updated>1676718694119</updated>
+     </task>
++    <task id="LOCAL-00001" summary="Update final Project">
++      <created>1676988288408</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1676988288409</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -126,4 +128,8 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Update final Project" />
++    <option name="LAST_COMMIT_MESSAGE" value="Update final Project" />
++  </component>
+ </project>
+\ No newline at end of file
